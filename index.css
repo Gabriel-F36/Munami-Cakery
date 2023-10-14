@@ -25,13 +25,6 @@ p, a, footer{
     font-size: large;
 }
 
-/* .homeBody{
-    background-image:url(https://images.alphacoders.com/132/1326930.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    resize: both;
-} */
-
 &::before {
     content: "";
     position:fixed;
