@@ -1,21 +1,39 @@
 body{
-    padding: 1rem;
     text-align: center;
-    position:sticky;
-    background-image: url(https://images.alphacoders.com/132/1326930.png);
-    background-color: blue;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 45%;
-    min-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    position:relative;
+    background-image: url(./Images/vector-wallpaper-water-abstract.jpg);
+    background-size:100%;
     
 }
 
-nav, a, h1{
-    padding: 1rem 1rem 0 1rem;
+
+
+.nav{
+    display: grid;
+    grid-template-areas: 'Home About Product Contact';
+    gap: 5%;
+    max-width: 800px;
+    margin: auto;
 }
+
+
+.nav > div{
+    margin-top: 5%;
+    text-align: center;
+}
+.Content{
+    max-width: 800px;
+    margin: auto;
+}
+
+.navHome{grid-area: Home;}
+.navAbout{grid-area: About;}
+.navProduct{grid-area: Product;}
+.navContact{grid-area: Contact;}
+
+/* nav, a, h1{
+    padding: 1rem 1rem 0 1rem;
+} */
 
 h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -32,7 +50,7 @@ p, a, footer{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(250, 248, 248, 0.65);
+    background-color: rgba(250, 248, 248, 0.8);
 }
 
 
@@ -61,13 +79,18 @@ input[type="button"] {
     opacity: 0.75;
     transition: .5s ease;
 }
-
-.footer{
-    padding: 200px 200px 200px 200px;
-}
-.links{
+/* .links{
     padding: unset;
-}
+} */
 .contact{
-    text-align: left;
+    max-width: 800px;
 }
+
+hr{
+    width: 50%;
+}
+/* @media (min-width: 600px) {
+    .column {
+      width: 50%;  
+    }
+  } */
